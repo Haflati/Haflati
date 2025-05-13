@@ -24,6 +24,11 @@
       animation: slideIn 1s ease-in-out;
     }
 
+    header img {
+      max-width: 180px;
+      margin-bottom: 20px;
+    }
+
     header h1 {
       font-size: 3rem;
       margin-bottom: 10px;
@@ -35,31 +40,13 @@
     }
 
     .container {
-      max-width: 900px;
+      max-width: 1200px;
       margin: 40px auto;
       padding: 30px;
       background-color: white;
       border-radius: 20px;
       box-shadow: 0 10px 25px rgba(0,0,0,0.1);
       position: relative;
-    }
-
-    .container::before {
-      content: "🎈";
-      font-size: 2rem;
-      position: absolute;
-      left: -20px;
-      top: -20px;
-      animation: float 4s ease-in-out infinite;
-    }
-
-    .container::after {
-      content: "🎉";
-      font-size: 2rem;
-      position: absolute;
-      right: -20px;
-      bottom: -20px;
-      animation: float 6s ease-in-out infinite;
     }
 
     .services {
@@ -86,14 +73,17 @@
 
     .gallery {
       margin-top: 30px;
-      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
     }
 
     .gallery img {
-      width: 100%;
-      max-width: 280px;
-      margin: 10px;
-      border-radius: 15px;
+      width: 48%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.1);
       transition: transform 0.3s ease;
     }
@@ -199,6 +189,7 @@
 <body>
 
 <header>
+  <img src="https://cdn.discordapp.com/attachments/1274294754150056060/1371458209230884986/file_0000000025886243b5c5deb5c062ac9f.png?ex=6823357d&is=6821e3fd&hm=3fe513fa634a220b20423cd666d8479ca4c6bf1c00c6d0679228aa98261f7af8&" alt="شعار Haflati">
   <h1>Haflati</h1>
   <p>لحفلات أعياد الميلاد فقط</p>
 </header>
@@ -211,16 +202,17 @@
 
   <div class="gallery">
     <h2>من حفلاتنا 🎂</h2>
-    
     <img src="https://cdn.discordapp.com/attachments/1274294754150056060/1371509708770250863/IMG-20250512-WA0021.jpg?ex=68236573&is=682213f3&hm=4492bcb3b1dfecfdcf0ccea2b9feaba4a25491f1004453080985e0ccd3a71db4&" alt="صورة من حفلة 2">
     <img src="https://cdn.discordapp.com/attachments/1274294754150056060/1371509697617596587/IMG-20250512-WA0019.jpg?ex=68236571&is=682213f1&hm=e5a4958f3f05e762dcba1a6186accc560b43697d92fb8ac1df3e7c446e3450cd&" alt="صورة من حفلة 3">
+    <img src="https://cdn.discordapp.com/attachments/1274294754150056060/1371555444404781206/IMG-20250512-WA0010.jpg?ex=6823900c&is=68223e8c&hm=0c61dd1b7d9e38b0e96ad11d96a0d9617d7d49429259457d320c269f871fa7d5&" alt="صورة من حفلة 4">
+    <img src="https://cdn.discordapp.com/attachments/1274294754150056060/1371555416999333999/IMG-20250512-WA0022.jpg?ex=68239005&is=68223e85&hm=e4bafb0dbc7d6bed6994ed420fe41d5a035fbf6f3962cc0df5f37d895026ea19&" alt="صورة من حفلة 5">
   </div>
 
   <div class="contact">
     <h3>تواصل معنا:</h3>
     <a href="https://www.instagram.com/haflati5?igsh=d3dkYzdiYjJyd2l5" target="_blank" class="instagram">Instagram</a>
     <a href="https://www.facebook.com/share/1AkuyunwqE/" target="_blank" class="facebook">Facebook</a>
-    <p>رقم الهاتف: 07976843223</p>
+    <p>رقم الهاتف: 0776843223</p>
   </div>
 </div>
 
@@ -230,3 +222,5 @@
 
 </body>
 </html>
+message.txt
+7 KB
